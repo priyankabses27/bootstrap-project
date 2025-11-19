@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Emailer</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="header">
+<div class="container">
+<nav class="navbar">
+<button class="menu-toggle">☰</button>
+<ul>
+<li><a href="#">NEWS</a></li>
+<li><a href="#">SERVICE</a></li>
+<li class="logo"><img src="specs.png" alt="Logo"></li>
+<li><a href="#">ABOUT</a></li>
+<li><a href="#">CONTACT</a></li>
+</ul>
+</nav>
+<!-- place this inside <header class="header"> <div class="container"> ... </div> -->
+<button class="menu-toggle" aria-expanded="false" aria-label="Open menu">☰</button>
+
+</div>
+</header>
+ 
+  <section class="hero">
+<img src="pexels-olly-3891067.jpg" alt="New Arrival" class="hero-image">
+<div class="overlay-text">
+<h1>NEW ARRIVAL</h1>
+<button class="btn">VIEW MORE</button>
+</div>
+</section>
+ 
+  <section class="products">
+<div class="container">
+<h2>LENSKART</h2>
+<div class="product-list">
+<div class="product">
+<img src="pexels-dystopiasavagestudios-19806486.jpg" alt="Product 1">
+<p>COOL FRAMES</p>
+<span>$30</span>
+<button class="btn">BUY NOW</button>
+</div>
+<div class="product">
+<img src="pexels-kseniachernaya-5752248.jpg" alt="Product 2">
+<p>ATTRACTIVE GLASSES</p>
+<span>$30</span>
+<button class="btn">BUY NOW</button>
+</div>
+</div>
+<p class="description">
+
+        Explore our exclusive collection of eyeglasses, sunglasses, and contact lenses crafted to suit every style and need. Whether you're looking for trendy frames, blue light protection, or prescription lenses, Lenskart offers a seamless shopping experience with expert guidance and doorstep delivery.
+</p>
+</div>
+</section>
+ 
+  <section class="about">
+<div class="container">
+<div class="about-content">
+<h2>About Us</h2>
+<p>
+
+          Welcome to our store, where quality meets style. Discover the latest trends
+
+          and timeless designs crafted for you.
+</p>
+<button class="btn">Learn More</button>
+</div>
+</div>
+</section>
+ 
+  <footer class="footer">
+<p>FOLLOW US ON</p>
+<div class="social-icons">
+<a href="#"><img src="mdi_instagram (1).png"/></a>
+<a href="#"><img src="ic_baseline-facebook (1).png"/></a>
+<a href="#"><img src="mdi_youtube.png" height="25"/></a>
+</div>
+</footer>
+<!-- jQuery CDN (add once) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+$(document).ready(function () {
+  $(".menu-toggle").click(function () {
+    $(".navbar").slideToggle(function () {
+      if ($(".navbar").is(":visible")) {
+        $(".hero").css("margin-top", $(".navbar").outerHeight() + "px");
+      } else {
+        $(".hero").css("margin-top", "0");
+      }
+    });
+  });
+});
+
+</script>
+
+
+</body>
+</html>
+
+ 
